@@ -13,6 +13,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
+import javax.validation.constraints.NotNull;
 
 
 /**
@@ -27,16 +28,16 @@ public class Gasto{
     @Id 
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
-    
+    @NotNull
     private String nomePessoa;
-    
+    @NotNull
     private String descricao;
-    
+    @NotNull
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date dataHora;
-    
+    @NotNull
     private double valor;
-    
+    @NotNull
     private String tags;
 
     public Gasto() {
