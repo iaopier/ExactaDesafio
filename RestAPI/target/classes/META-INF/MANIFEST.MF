@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Exacta-Desafio
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Piercarlo
+Implementation-Vendor-Id: com.teste
+Build-Jdk: 1.8.0_212
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/Exacta-Desafio
+Created-By: Maven Integration for Eclipse
+
