@@ -14,6 +14,9 @@
 package io.swagger.client.model;
 
 import java.util.Objects;
+
+import javax.validation.constraints.NotNull;
+
 import java.util.Arrays;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
@@ -43,10 +46,12 @@ public class Gasto {
   private String nomePessoa = null;
 
   @SerializedName("tags")
+  @NotNull
   private String tags = null;
-
+  
   @SerializedName("valor")
-  private Double valor = null;
+  @NotNull
+  private Double valor = 0.0;
 
   public Gasto dataHora(OffsetDateTime dataHora) {
     this.dataHora = dataHora;
