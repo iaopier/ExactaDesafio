@@ -6,7 +6,8 @@
 package com.apirest.ExactaDesafio.models;
 
 
-import java.util.Date;
+import java.time.OffsetDateTime;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -34,10 +35,8 @@ public class Gasto{
     @NotNull
     private String descricao;
     @NotNull
-    @Temporal(javax.persistence.TemporalType.DATE)
-    private Date dataHora;
+    private OffsetDateTime dataHora;
     @NotNull
-    @NotBlank
     private double valor;
     @NotNull
     private String tags;
@@ -45,7 +44,7 @@ public class Gasto{
     public Gasto() {
     }
     
-    public Gasto( String nomePessoa, String descricao, Date dataHora, double valor, String tags) {
+    public Gasto( String nomePessoa, String descricao, OffsetDateTime dataHora, double valor, String tags) {
         this.nomePessoa = nomePessoa;
         this.descricao = descricao;
         this.dataHora = dataHora;
@@ -65,7 +64,7 @@ public class Gasto{
         return descricao;
     }
 
-    public Date getDataHora() {
+    public OffsetDateTime getDataHora() {
         return dataHora;
     }
 
@@ -85,7 +84,7 @@ public class Gasto{
         this.descricao = descricao;
     }
 
-    public void setDataHora(Date dataHora) {
+    public void setDataHora(OffsetDateTime dataHora) {
         this.dataHora = dataHora;
     }
 
