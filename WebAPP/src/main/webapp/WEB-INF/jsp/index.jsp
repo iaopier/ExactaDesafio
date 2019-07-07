@@ -20,6 +20,7 @@
         <body>
             <h1>Página Inicial</h1>
             <a href="/gastos">Ver Gastos</a>
+            <a href="/cadastrar">Cadastrar Gastos</a>
         </body>
     </html>
 </f:view>
