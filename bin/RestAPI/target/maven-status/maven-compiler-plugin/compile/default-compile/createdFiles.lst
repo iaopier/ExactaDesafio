@@ -1,0 +1,6 @@
+com\apirest\ExactaDesafio\controllers\GastoAPI.class
+com\apirest\ExactaDesafio\ExactaDesafioApplication.class
+com\apirest\ExactaDesafio\services\GastoService.class
+com\apirest\ExactaDesafio\SwaggerConfig.class
+com\apirest\ExactaDesafio\repositories\GastoRepository.class
+com\apirest\ExactaDesafio\models\Gasto.class
