@@ -44,8 +44,6 @@ public class GastoAPI {
     @ApiOperation(value="Retorna gasto específico por ID")
     @GetMapping("/{id}")
     public ResponseEntity<Gasto> findById(@PathVariable Long id) {
-        Optional<Gasto> gasto = gastoService.findById(id);
-
         return ResponseEntity.ok(gastoService.findById(id).get());
     }
     
