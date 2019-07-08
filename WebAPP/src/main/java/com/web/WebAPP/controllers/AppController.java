@@ -57,7 +57,7 @@ public class AppController {
     	GastoApiApi api = new GastoApiApi(client);
     	client.setBasePath("http://localhost:8080");
     	api.createUsingPOST(gasto);
-        return "cadastro";
+        return "cadastroSucesso";
     }
     
     @GetMapping("/cadastrar")

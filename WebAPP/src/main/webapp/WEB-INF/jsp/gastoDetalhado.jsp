@@ -12,7 +12,7 @@
 	<p>Data/hora: ${gasto.dataHora}
 	<p>Valor: ${gasto.valor}
 	<p>Tags: ${gasto.tags}
-			
+	<p><a href="/gastos">Voltar para todos os gastos</a>	
 </body>
 </html>
 </body>

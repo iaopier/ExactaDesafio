@@ -17,5 +17,6 @@
 		</ul>
 
 	</c:if>
+	<p><a href="/">Voltar para o início</a>
 </body>
 </html>

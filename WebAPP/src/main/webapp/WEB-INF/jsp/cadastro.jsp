@@ -21,5 +21,6 @@
     	Tags: <input type="text" name="tagsGasto"></input>
 		<input type="submit" value="Submit">
 	</form>
+	<p><a href="/">Voltar para o ínicio</a>
 </body>
 </html>

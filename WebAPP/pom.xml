@@ -76,14 +76,14 @@
 			<artifactId>api-client</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>C:\Users\Piercarlo\Desktop\swagger-client.jar</systemPath>
+			<systemPath>${project.basedir}\target\swagger-client.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>threetenbp-0.8</groupId>
 			<artifactId>threetenbp-0.8</artifactId>
 			<version>0.8</version>
 			<scope>system</scope>
-			<systemPath>C:\Users\Piercarlo\Desktop\threetenbp-0.8.jar</systemPath>
+			<systemPath>${project.basedir}\target\threetenbp-0.8.jar</systemPath>
 		</dependency>
 	</dependencies>
 
