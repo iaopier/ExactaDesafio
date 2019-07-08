@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.6.RELEASE</version>
+		<version>2.1.4.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.web</groupId>
@@ -14,7 +14,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>WebAPP</name>
 	<description>Demo project for Spring Boot</description>
-
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -71,6 +70,20 @@
 			<groupId>io.gsonfire</groupId>
 			<artifactId>gson-fire</artifactId>
 			<version>1.8.3</version>
+		</dependency>
+		<dependency>
+			<groupId>swagger-client</groupId>
+			<artifactId>api-client</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\Users\Piercarlo\Desktop\swagger-client.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>threetenbp-0.8</groupId>
+			<artifactId>threetenbp-0.8</artifactId>
+			<version>0.8</version>
+			<scope>system</scope>
+			<systemPath>C:\Users\Piercarlo\Desktop\threetenbp-0.8.jar</systemPath>
 		</dependency>
 	</dependencies>
 

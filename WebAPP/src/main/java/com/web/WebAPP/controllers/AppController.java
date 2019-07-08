@@ -9,7 +9,6 @@ package com.web.WebAPP.controllers;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -47,8 +46,10 @@ public class AppController {
     	Gasto gasto = new Gasto();
     	gasto.setNomePessoa(nomePessoa);
     	gasto.setDescricao(descricaoGasto);
-    	String input = "2018-07-22T14:00:00-03:00";
-    	OffsetDateTime offsetDateTime = OffsetDateTime.parse(input,DateTimeFormatter.ISO_OFFSET_DATE_TIME);
+    	dataHora = dataHora.replaceFirst(" ", "T");
+    	dataHora = dataHora.replace(" ", "-03:00");
+    	System.out.println(dataHora);
+    	OffsetDateTime offsetDateTime = OffsetDateTime.parse(dataHora,DateTimeFormatter.ISO_OFFSET_DATE_TIME);
     	gasto.setDataHora(offsetDateTime);
     	gasto.setValor(Double.parseDouble(valorGasto));
     	gasto.setTags(tagsGasto);
@@ -80,7 +81,6 @@ public class AppController {
     @GetMapping("/gasto/{id}")
     public ModelAndView gastoId(@PathVariable("id") int id) throws ApiException{
         System.out.println("Application->gastoId()");
-        System.out.println("Application->Gastos()");
     	ApiClient client = new ApiClient();
     	GastoApiApi api = new GastoApiApi(client);
     	client.setBasePath("http://localhost:8080");
