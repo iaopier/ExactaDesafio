@@ -72,18 +72,15 @@
 			<version>1.8.3</version>
 		</dependency>
 		<dependency>
-			<groupId>swagger-client</groupId>
-			<artifactId>api-client</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}\target\swagger-client.jar</systemPath>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-java-client</artifactId>
+			<version>1.0.0</version>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>threetenbp-0.8</groupId>
-			<artifactId>threetenbp-0.8</artifactId>
-			<version>0.8</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}\target\threetenbp-0.8.jar</systemPath>
+			<groupId>org.threeten</groupId>
+			<artifactId>threetenbp</artifactId>
+			<version>1.4.4</version>
 		</dependency>
 	</dependencies>
 
